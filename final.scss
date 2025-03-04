@@ -182,7 +182,9 @@ $purpleColor: #F0F1FA;
   justify-content: space-evenly;
   align-items: center;
   .portrait {
-    box-shadow: 1px 1px 1px 1px rgba($color: #000000, $alpha: 0.3);
+    width: 350px;
+    height: auto;
+    object-fit: contain;
   }
   .about__me__grid {
     display: grid;
@@ -325,7 +327,7 @@ $purpleColor: #F0F1FA;
 }
 
 @media screen and (max-width: 1400px) {
-  .item, .project {
+  .item {
     height: 100vh;
   }
   .desktop {
@@ -507,6 +509,10 @@ $purpleColor: #F0F1FA;
 }
 
 @media screen and (max-width: 920px) {
+  .item, .project {
+    height: max-content;
+    min-height: 100vh;
+  }
   .desktop {
     column-gap: 20px;
     font-size: 17px;
@@ -557,7 +563,8 @@ $purpleColor: #F0F1FA;
 
 @media screen and (max-width: 768px) {
   .item, .project {
-    height: 120vh;
+    height: max-content;
+    min-height: 120vh;
   }
   .desktop {
     display: none;
@@ -632,6 +639,10 @@ $purpleColor: #F0F1FA;
 }
 
 @media screen and (max-width: 600px) {
+  .item, .project {
+    height: max-content;
+    min-height: 120vh;
+  }
   .right-container {
     display: flex;
     flex-direction: column-reverse;
@@ -677,6 +688,10 @@ $purpleColor: #F0F1FA;
 }
 
 @media screen and (max-width: 460px) {
+  .item, .project {
+    height: max-content;
+    min-height: 120vh;
+  }
   .right-container {
     width: 90%;
     height: 50vh;
@@ -812,7 +827,8 @@ $purpleColor: #F0F1FA;
 
 @media screen and (min-width: 1401px) {
   .item, .project {
-    height: 100vh;
+    height: max-content;
+    min-height: 100vh;
   }
   .desktop {
       font-size: 20px;

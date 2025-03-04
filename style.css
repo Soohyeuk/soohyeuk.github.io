@@ -129,7 +129,9 @@ li {
   justify-content: space-evenly;
   align-items: center; }
   .about__me__list .portrait {
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3); }
+    width: 350px;
+    height: auto;
+    object-fit: contain; }
   .about__me__list .about__me__grid {
     display: grid; }
     .about__me__list .about__me__grid .grid__item {
@@ -239,7 +241,7 @@ li {
   .mobile, .menu-links {
     display: none; } }
 @media screen and (max-width: 1400px) {
-  .item, .project {
+  .item {
     height: 100vh; }
 
   .desktop {
@@ -376,6 +378,10 @@ li {
   .footer__container .footer__contact h4, .footer__container .social__item h4 {
     font-size: 13px; } }
 @media screen and (max-width: 920px) {
+  .item, .project {
+    height: max-content;
+    min-height: 100vh; }
+
   .desktop {
     column-gap: 20px;
     font-size: 17px; }
@@ -422,7 +428,8 @@ li {
     font-size: 13px; } }
 @media screen and (max-width: 768px) {
   .item, .project {
-    height: 120vh; }
+    height: max-content;
+    min-height: 120vh; }
 
   .desktop {
     display: none; }
@@ -494,6 +501,10 @@ li {
   .footer__container {
     margin-top: 150px; } }
 @media screen and (max-width: 600px) {
+  .item, .project {
+    height: max-content;
+    min-height: 120vh; }
+
   .right-container {
     display: flex;
     flex-direction: column-reverse;
@@ -531,6 +542,10 @@ li {
     row-gap: 10px;
     column-gap: 10px; } }
 @media screen and (max-width: 460px) {
+  .item, .project {
+    height: max-content;
+    min-height: 120vh; }
+
   .right-container {
     width: 90%;
     height: 50vh;
@@ -640,7 +655,8 @@ li {
     display: none; } }
 @media screen and (min-width: 1401px) {
   .item, .project {
-    height: 100vh; }
+    height: max-content;
+    min-height: 100vh; }
 
   .desktop {
     font-size: 20px; }
