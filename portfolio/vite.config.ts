@@ -9,9 +9,21 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     rollupOptions: {
+      external: ['react', 'react-dom'],
       output: {
-        manualChunks: undefined
+        manualChunks: {
+          react: ['react', 'react-dom'],
+          timeline: ['react-vertical-timeline-component']
+        },
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM'
+        }
       }
     }
+  },
+  optimizeDeps: {
+    include: ['react', 'react-dom'],
+    force: true
   }
 })

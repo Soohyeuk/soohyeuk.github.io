@@ -3,7 +3,7 @@ import Landing from '../components/Landing';
 import Skill from '../components/Skill';
 import Project from '../components/Project';
 import Contact from '../components/Contact';
-// import Experience from '../components/Experience';
+import Experience from '../components/Experience';
 
 export default function App() {
   return (
@@ -30,10 +30,10 @@ export default function App() {
               <Project />
             </section>
 
-            {/* <section id="experience" className="scroll-mt-28 w-full max-w-[50rem] text-center mb-60 sm:mb-72">
+            <section id="experience" className="scroll-mt-28 w-full max-w-[50rem] text-center mb-60 sm:mb-72">
               <h2 className="text-3xl font-medium capitalize mb-16 text-black dark:text-white">Experience</h2>
               <Experience />
-            </section> */}
+            </section>
 
             <section id="contact" className="scroll-mt-28 w-full max-w-[50rem] text-center">
               <Contact />

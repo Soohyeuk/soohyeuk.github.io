@@ -1,17 +1,14 @@
 import React from 'react'
-import {
-    VerticalTimeline,
-    VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+
 import { experiencesData, Experience as ExperienceType } from '../library/data';
 import clsx from 'clsx';
 
 const Experience = () => {
-
   return (
-        <section id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
-            <VerticalTimeline 
+    <section id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
+                  <VerticalTimeline 
                 lineColor= "#e5e7eb"
                 animate={true}
                 layout={'1-column-left'}
@@ -85,48 +82,7 @@ const Experience = () => {
                     </React.Fragment>
                 ))}
             </VerticalTimeline>
-
-            <style>
-                {`
-                    @keyframes gradient {
-                        0% {
-                            background-position: 0% 50%;
-                        }
-                        50% {
-                            background-position: 100% 50%;
-                        }
-                        100% {
-                            background-position: 0% 50%;
-                        }
-                    }
-                    .vertical-timeline::before {
-                        left: 18px;
-                    }
-                    .vertical-timeline-element {
-                        margin: 3em 0;
-                    }
-                    .vertical-timeline-element-content {
-                        margin-left: 60px;
-                        background: #ffffff !important;
-                        backdrop-filter: blur(8px);
-                    }
-                    @media (prefers-color-scheme: dark) {
-                        .vertical-timeline-element-content {
-                            background: rgba(31, 41, 55, 0.7) !important;
-                            border: 1px solid rgba(255, 255, 255, 0.05);
-                        }
-                        .vertical-timeline-element-content-arrow {
-                            border-right: 7px solid rgba(31, 41, 55, 0.7) !important;
-                        }
-                    }
-                    .vertical-timeline-element-icon {
-                        background: linear-gradient(-45deg, #2dd4bf, #06b6d4, #4f46e5, #2dd4bf) !important;
-                        background-size: 400% 400% !important;
-                        animation: gradient 5s ease infinite !important;
-                    }
-                `}
-            </style>
-        </section>
+    </section>
   )
 }
 
