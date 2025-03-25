@@ -4,17 +4,17 @@ import proj3 from "../assets/proj3.jpg";
 import wip from "../assets/wip.jpg";
 
 // Import all skill icons
-import djangoIcon from '../assets/django.svg';
+import djangoIcon from '../assets/Django.svg';
 import drfIcon from '../assets/Django REST.svg';
-import mysqlIcon from '../assets/mysql.svg';
-import gitIcon from '../assets/git.svg';
-import pythonIcon from '../assets/python.svg';
+import mysqlIcon from '../assets/MySQL.svg';
+import gitIcon from '../assets/Git.svg';
+import pythonIcon from '../assets/Python.svg';
 import sqlIcon from '../assets/MySQL.svg';
-import matplotlibIcon from '../assets/matplotlib.svg';
-import pandasIcon from '../assets/pandas.svg';
-import numpyIcon from '../assets/numpy.svg';
+import matplotlibIcon from '../assets/Matplotlib.svg';
+import pandasIcon from '../assets/Pandas.svg';
+import numpyIcon from '../assets/NumPy.svg';
 import reactIcon from '../assets/React.svg';
-import typescriptIcon from '../assets/Typescript.svg';
+import typescriptIcon from '../assets/TypeScript.svg';
 import circleCiIcon from '../assets/CircleCI.svg';
 import ibmMainframeIcon from '../assets/ibm.svg';
 import canvaIcon from '../assets/Canva.svg';
