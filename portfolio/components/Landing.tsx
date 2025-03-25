@@ -1,4 +1,3 @@
-import React from 'react';
 const Landing = () => {
   const handleDownloadResume = () => {
     const link = document.createElement('a');

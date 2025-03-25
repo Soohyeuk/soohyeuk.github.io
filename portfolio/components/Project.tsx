@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { projectsData } from '../library/data'
-import React from 'react';
+
 const Project = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[75rem] mx-auto project-container">

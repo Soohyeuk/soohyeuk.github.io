@@ -1,9 +1,9 @@
-import Header from '../components/Header';
+import Header from '../components/header';
 import Landing from '../components/Landing';
 import Skill from '../components/Skill';
 import Project from '../components/Project';
 import Contact from '../components/Contact';
-import Experience from '../components/Experience';
+// import Experience from '../components/Experience';
 
 export default function App() {
   return (
