@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Base styles */
+html {
+    --line-color: #e5e7eb;
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply bg-white text-gray-950;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
