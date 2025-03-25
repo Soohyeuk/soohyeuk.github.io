@@ -9,14 +9,10 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     rollupOptions: {
-      external: ['react', 'react-dom'],
       output: {
         manualChunks: {
-          timeline: ['react-vertical-timeline-component']
-        },
-        globals: {
-          react: 'React',
-          'react-dom': 'ReactDOM'
+          'vendor': ['react', 'react-dom'],
+          'timeline': ['react-vertical-timeline-component']
         }
       }
     }
