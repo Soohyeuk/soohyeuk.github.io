@@ -16,9 +16,9 @@ export default function App() {
           <Header />
           
           <main className="flex flex-col items-center px-4 min-h-screen justify-between pt-40 sm:pt-48 pb-28 text-white">
-            {/* <section id="home" className="scroll-mt-28 w-full max-w-[50rem] text-center mb-60 sm:mb-72">
+            <section id="home" className="scroll-mt-28 w-full max-w-[50rem] text-center mb-60 sm:mb-72">
               <Landing />
-            </section> */}
+            </section>
 
             <section id="skills" className="scroll-mt-28 w-full max-w-[50rem] text-center mb-60 sm:mb-72">
               <h2 className="text-3xl font-medium capitalize mb-16 text-black dark:text-white">Skills</h2>
