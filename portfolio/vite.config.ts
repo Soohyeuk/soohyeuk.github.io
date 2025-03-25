@@ -12,7 +12,6 @@ export default defineConfig({
       external: ['react', 'react-dom'],
       output: {
         manualChunks: {
-          react: ['react', 'react-dom'],
           timeline: ['react-vertical-timeline-component']
         },
         globals: {
