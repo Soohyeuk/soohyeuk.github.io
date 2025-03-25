@@ -8,16 +8,10 @@
 - **Frontend**
   - React 18
   - TypeScript
-  - Vite 6
+  - Vite 
   - Tailwind CSS
   - Framer Motion
   - React Vertical Timeline Component
 
-- **Development & Build**
-  - npm
-  - ESLint
-  - SWC (for faster builds)
-
 - **Deployment**
   - Netlify
-  - Continuous deployment from main branch
