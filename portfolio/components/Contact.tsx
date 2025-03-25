@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useForm, ValidationError } from '@formspree/react';
+// import type { SubmitHandler } from '@formspree/react';
+
+interface FormData {
+  email: string;
+  message: string;
+}
 
 const ContactForm = ({ formKey, onSuccess }: { formKey: number; onSuccess: () => void }) => {
   const [state, handleSubmit] = useForm("meoakwjz");
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     email: '',
     message: ''
   });
@@ -17,9 +23,9 @@ const ContactForm = ({ formKey, onSuccess }: { formKey: number; onSuccess: () =>
     }));
   };
 
-  const onSubmit = async (e: React.FormEvent) => {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    await handleSubmit(e);
+    handleSubmit(e);
   };
 
   useEffect(() => {
