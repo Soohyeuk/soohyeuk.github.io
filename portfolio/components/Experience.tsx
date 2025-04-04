@@ -30,6 +30,7 @@ const Experience = () => {
                                 padding: "1.5rem 2rem",
                                 maxWidth: "650px",
                                 backdropFilter: "blur(8px)",
+                                borderRadius: "1.5rem",
                             }}
                             contentArrowStyle={{
                                 borderRight: "0.4rem solid #ffffff",

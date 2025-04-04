@@ -2,6 +2,7 @@ import proj1 from "../assets/proj1.jpg";
 import proj2 from "../assets/proj2.jpg";
 import proj3 from "../assets/proj3.jpg";
 import wip from "../assets/wip.jpg";
+import proj4 from "../assets/proj4.jpg";
 
 // Import all skill icons
 import djangoIcon from '../assets/Django.svg';
@@ -91,12 +92,12 @@ export const projectsData: Project[] = [
       imageUrl: proj3,
     },
     {
-      title: "ChefPanda: AI-powered Asian Recipe Generator",
+      title: "httpi: A CLI API Testing Tool",
       description:
-        "I am working on a project that uses AI to generate meal-prep recipes based on the user's preferences and choices. If there's any left-over ingredients, it will suggest recipes to use them up.",
-      tags: ["React Native", "Django", "Python", "AWS", "sklearn", "MySQL", "Git"],
-      link: "https://github.com/Soohyeuk/ChefPanda",
-      imageUrl: wip,
+        "A passion project while learning Go. It is a CLI tool that allows you to test APIs, like Postman, but in the terminal.",
+      tags: ["Go", "Git"],
+      link: "https://github.com/Soohyeuk/cli-api-tester",
+      imageUrl: proj4,
     },
   ] as const;
 
