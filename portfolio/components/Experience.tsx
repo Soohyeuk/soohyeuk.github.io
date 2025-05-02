@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
@@ -6,6 +6,20 @@ import { experiencesData, Experience as ExperienceType } from '../library/data';
 import clsx from 'clsx';
 
 const Experience = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    setIsDarkMode(mediaQuery.matches);
+
+    const handleChange = (e: MediaQueryListEvent) => {
+      setIsDarkMode(e.matches);
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, []);
+
   return (
     <section id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
                   <VerticalTimeline 
@@ -23,7 +37,7 @@ const Experience = () => {
                                 triggerOnce: true,
                             }}
                             contentStyle={{
-                                background: "#ffffff",
+                                background: isDarkMode ? "#1f2937" : "#ffffff",
                                 boxShadow: "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
                                 border: "1px solid rgba(0,0,0, 0.05)",
                                 textAlign: "left",
