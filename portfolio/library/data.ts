@@ -19,9 +19,9 @@ import circleCiIcon from '../assets/CircleCI.svg';
 import ibmMainframeIcon from '../assets/ibm.svg';
 import canvaIcon from '../assets/Canva.svg';
 import javaIcon from '../assets/Java.svg';
-import nextjsIcon from '../assets/Next.js.svg';
-import prismaIcon from '../assets/Prisma.svg';
-import awsIcon from '../assets/AWS.svg';
+import nextjsIcon from '../assets/next.js.svg';
+import prismaIcon from '../assets/prisma.svg';
+import awsIcon from '../assets/aws.svg';
 
 export interface Link {
     name: string;
