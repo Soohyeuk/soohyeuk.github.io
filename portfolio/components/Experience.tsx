@@ -82,7 +82,7 @@ const Experience = () => {
                                                 src={tag.icon}
                                                 alt={tag.name}
                                                 className={clsx({
-                                                    "dark:invert": tag.name === "Django" || tag.name === "DRF" || tag.name === "CircleCI"
+                                                    "dark:invert": tag.name === "Django" || tag.name === "DRF" || tag.name === "CircleCI" || tag.name === "Next.js" || tag.name === "Prisma" || tag.name === "AWS"
                                                 })}
                                             />
                                         </div>

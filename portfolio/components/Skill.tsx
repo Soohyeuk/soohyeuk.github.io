@@ -14,11 +14,18 @@ import pandasIcon from '../assets/Pandas.svg'
 import numpyIcon from '../assets/NumPy.svg'
 import matplotlibIcon from '../assets/Matplotlib.svg'
 import pytestIcon from '../assets/pytest.svg'
+import nextjsIcon from '../assets/next.js.svg'
+import prismaIcon from '../assets/prisma.svg'
+import awsIcon from '../assets/aws.svg'
 
 const Skill = () => {
   return (
     <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-4 md:gap-6 place-items-center">
       {/* Frontend */}
+      <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
+        <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform dark:invert' src={nextjsIcon} alt="Next.js" />
+        <span className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">Next.js</span>
+      </div>
       <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
         <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform' src={reactIcon} alt="React" />
         <span className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">React</span>
@@ -53,6 +60,10 @@ const Skill = () => {
         <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform' src={mysqlIcon} alt="MySQL" />
         <span className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">MySQL</span>
       </div>
+      <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
+        <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform dark:invert' src={prismaIcon} alt="Prisma" />
+        <span className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">Prisma</span>
+      </div>
 
       {/* Developer Tools */}
       <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
@@ -70,6 +81,10 @@ const Skill = () => {
       <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
         <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform' src={gcloudIcon} alt="Google Cloud" />
         <span className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">Google Cloud</span>
+      </div>
+      <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
+        <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform dark:invert' src={awsIcon} alt="AWS" />
+        <span className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">AWS</span>
       </div>
 
       {/* Data Related */}
