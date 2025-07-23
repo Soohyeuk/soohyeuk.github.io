@@ -19,6 +19,9 @@ import circleCiIcon from '../assets/CircleCI.svg';
 import ibmMainframeIcon from '../assets/ibm.svg';
 import canvaIcon from '../assets/Canva.svg';
 import javaIcon from '../assets/Java.svg';
+import nextjsIcon from '../assets/Next.js.svg';
+import prismaIcon from '../assets/Prisma.svg';
+import awsIcon from '../assets/AWS.svg';
 
 export interface Link {
     name: string;
@@ -101,6 +104,19 @@ export const projectsData: Project[] = [
   ] as const;
 
 export const experiencesData: Experience[] = [
+    {
+        company: "Civic",
+        position: "Software Engineer Intern",
+        startDate: "May. 2025",
+        endDate: "Jul. 2025",
+        description: "Launched template features within the embedded Rich Text Editor to streamline email automation, improving efficiency by 40%; utilized TypeScript, PlateJS, and tRPC server components. Designing and implementing data migration of over 20+ databases deployed in Azure to be consolidated under PostgreSQL using Prisma. Outlined internal tools to incorporate user feedback into ML model predictions for email automation, resulting in a 100% satisfaction rate from coworkers and a 10% improvement in model accuracy; utilized Matplotlib, NumPy, PostgreSQL, Next.js (TypeScript).",
+        tags: [
+            { icon: nextjsIcon, name: "Next.js" },
+            { icon: typescriptIcon, name: "TypeScript" },
+            { icon: prismaIcon, name: "Prisma" },
+            { icon: awsIcon, name: "AWS" },
+        ],
+    },
     {
         company: "LikeLion US",
         position: "Backend Developer Intern",
