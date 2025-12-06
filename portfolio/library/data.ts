@@ -78,11 +78,11 @@ export const projectsData: Project[] = [
       imageUrl: proj1,
     },
     {
-      title: "Fantasy Sports League Web",
+      title: "Chef Panda: Video to Recipe with AI",
       description:
-        "I developed a fantasy sports website for Basketball, Football, and Baseball. I used Flask, Python, and MySQL to scrap players' stats and create a league for users to join and compete.",
-      tags: ["React", "JavaScript", "CSS", "Flask", "Python", "MySQL", "Git"],
-      link: "https://github.com/Soohyeuk/fantasy_sport",
+        "I developed a website that takes a YouTube video and generates a recipe from it. I used React, JavaScript, TailwindCSS, and FastAPI to create the website. Initially, I am testing it with OpenAI API, but I plan to use a fine-tuned LLM model in the future.",
+      tags: ["React", "JavaScript", "CSS", "FastAPI", "Python", "SQLite", "Git"],
+      link: "https://github.com/Soohyeuk/ChefPanda",
       imageUrl: proj2,
     },
     {

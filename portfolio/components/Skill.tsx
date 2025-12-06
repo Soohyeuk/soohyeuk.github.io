@@ -17,6 +17,13 @@ import pytestIcon from '../assets/pytest.svg'
 import nextjsIcon from '../assets/next.js.svg'
 import prismaIcon from '../assets/prisma.svg'
 import awsIcon from '../assets/aws.svg'
+import tailwindIcon from '../assets/tailwind_CSS.svg';
+import kafka from '../assets/ApacheKafka.svg' 
+import spark from '../assets/ApacheSpark.svg'
+import go from '../assets/Go.svg'
+import mongodb from '../assets/MongoDB.svg'
+import postgresql from '../assets/PostgresSQL.svg'
+
 
 const Skill = () => {
   return (
@@ -38,6 +45,10 @@ const Skill = () => {
         <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform' src={sassIcon} alt="Sass" />
         <span className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">Sass</span>
       </div>
+      <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
+        <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform' src={tailwindIcon} alt="Tailwind CSS" />
+        <span className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">Tailwind CSS</span>
+      </div>
 
       {/* Backend */}
       <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
@@ -53,12 +64,24 @@ const Skill = () => {
         <span className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">FastAPI</span>
       </div>
       <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
+        <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform' src={go} alt="Go" />
+        <span className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">Go</span>
+      </div>
+      <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
         <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform' src={cppIcon} alt="C++" />
         <span className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">C++</span>
       </div>
       <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
         <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform' src={mysqlIcon} alt="MySQL" />
         <span className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">MySQL</span>
+      </div>
+      <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
+        <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform' src={postgresql} alt="PostgreSQL" />
+        <span className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">PostgreSQL</span>
+      </div>
+      <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
+        <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform' src={mongodb} alt="MongoDB" />
+        <span className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">MongoDB</span>
       </div>
       <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
         <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform dark:invert' src={prismaIcon} alt="Prisma" />
@@ -88,6 +111,14 @@ const Skill = () => {
       </div>
 
       {/* Data Related */}
+      <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
+        <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform dark:invert' src={kafka} alt="Apache Kafka" />
+        <span className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">Apache Kafka</span>
+      </div>
+      <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
+        <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform' src={spark} alt="Apache Spark" />
+        <span className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">Apache Spark</span>
+      </div>
       <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
         <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform' src={pandasIcon} alt="Pandas" />
         <span className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">Pandas</span>

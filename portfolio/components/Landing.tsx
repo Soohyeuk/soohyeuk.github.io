@@ -23,9 +23,8 @@ const Landing = () => {
       <div className='mt-5'>
         <h1 className='text-2xl sm:text-3xl md:text-4xl leading-normal text-gray-900 dark:text-gray-50'>
           Hi, I am <span className='text-teal-500 dark:text-teal-400 font-bold'>Soohyeuk</span>. 
-          I am a 3rd year <span className='text-teal-500 dark:text-teal-400 font-bold'>CS</span> student at NYU. 
-          I have a passion for <span className='text-teal-500 dark:text-teal-400 font-bold'>programming</span> and building products. 
-          I also like to create graphs and analyze data.
+          I am a 4th year <span className='text-teal-500 dark:text-teal-400 font-bold'>CS</span> student at NYU. 
+          I have a passion for <span className='text-teal-500 dark:text-teal-400 font-bold'>programming</span> and building products.
         </h1>
       </div>
       <div className='flex flex-row items-center justify-center gap-3 mt-10'>
