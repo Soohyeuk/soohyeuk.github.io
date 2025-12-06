@@ -82,7 +82,7 @@ export const projectsData: Project[] = [
       description:
         "I developed a website that takes a YouTube video and generates a recipe from it. I used React, JavaScript, TailwindCSS, and FastAPI to create the website. Initially, I am testing it with OpenAI API, but I plan to use a fine-tuned LLM model in the future.",
       tags: ["React", "JavaScript", "CSS", "FastAPI", "Python", "SQLite", "Git"],
-      link: "https://github.com/Soohyeuk/ChefPanda",
+      link: "https://chef-panda.vercel.app",
       imageUrl: proj2,
     },
     {
