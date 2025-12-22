@@ -86,11 +86,11 @@ export const projectsData: Project[] = [
       imageUrl: proj2,
     },
     {
-      title: "Python Template Repository",
+      title: "Gmail AI Client as a uv package",
       description:
-        "I created a Python template repository with CI/CD pipeline and Unit/Integration/End-to-End tests. Allowed each component to be a uv package.",
+        "I created a Gmail AI Client as a uv package. It is a Gmail AI Client that allows you to send and receive emails with AI.",
       tags: ["Python", "uv", "mypy", "ruff", "pytest", "coverage", "CircleCI", "Git"],
-      link: "https://github.com/Shounak-Ghosh/ospsd-hw1-python",
+      link: "https://github.com/Shounak-Ghosh/ospsd-hw1-python/tree/hw4-integration",
       imageUrl: proj3,
     },
     {
