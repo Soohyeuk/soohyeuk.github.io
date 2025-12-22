@@ -29,7 +29,12 @@ const Project = () => {
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.2 }}
           >
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => (window as any)?.gtag?.('event', 'project_click', { title: project.title })}
+            >
               <img 
                 src={project.imageUrl} 
                 alt={project.title} 

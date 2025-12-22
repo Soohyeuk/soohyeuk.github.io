@@ -3,6 +3,11 @@ import pdfIcon from '../assets/pdf.svg'
 import linkedinIcon from '../assets/linkedin-logo.svg'
 import githubIcon from '../assets/github-logo.svg'
 import resume from '../assets/Resume_Soohyeuk_Choi.pdf'
+
+const trackEvent = (action: string, params?: Record<string, unknown>) => {
+  (window as any)?.gtag?.('event', action, params);
+};
+
 const Landing = () => {
   const handleDownloadResume = () => {
     const link = document.createElement('a');
@@ -11,6 +16,7 @@ const Landing = () => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    trackEvent('resume_download', { file_name: 'Resume_Soohyeuk_Choi.pdf' });
   };
 
   return (
@@ -38,7 +44,10 @@ const Landing = () => {
             </button>
 
             <button 
-              onClick={() => window.open("https://www.linkedin.com/in/soohyeuk-choi-78a956246/", "_blank")}
+              onClick={() => {
+                trackEvent('linkedin_click', { destination: 'linkedin' });
+                window.open("https://www.linkedin.com/in/soohyeuk-choi-78a956246/", "_blank");
+              }}
               className='bg-gradient-to-r from-teal-400 via-cyan-500 to-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 text-white p-3 sm:px-6 sm:py-3 rounded-full transition-all duration-300 flex items-center gap-2 hover:scale-105'
               aria-label="LinkedIn Profile"
             >
@@ -47,7 +56,10 @@ const Landing = () => {
             </button>
 
             <button 
-              onClick={() => window.open("https://github.com/soohyeuk", "_blank")}
+              onClick={() => {
+                trackEvent('github_click', { destination: 'github' });
+                window.open("https://github.com/soohyeuk", "_blank");
+              }}
               className='bg-gradient-to-r from-teal-400 via-cyan-500 to-indigo-500 hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 text-white p-3 sm:px-6 sm:py-3 rounded-full transition-all duration-300 flex items-center gap-2 hover:scale-105'
               aria-label="GitHub Profile"
             >

@@ -3,6 +3,10 @@ import { motion } from "framer-motion";
 import clsx from "clsx";
 import { links } from '../library/data';
 
+const trackEvent = (action: string, params?: Record<string, unknown>) => {
+    (window as any)?.gtag?.('event', action, params);
+};
+
 export default function Header() {
     const [activeSection, setActiveSection] = useState<string>("Home");
 
@@ -39,6 +43,7 @@ export default function Header() {
             element.scrollIntoView({ behavior: 'smooth' });
         }
         setActiveSection(name);
+        trackEvent('nav_click', { section: name.toLowerCase() });
     };
     
 

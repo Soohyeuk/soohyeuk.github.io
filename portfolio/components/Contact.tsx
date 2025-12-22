@@ -3,6 +3,10 @@ import { motion } from 'framer-motion';
 import { useForm, ValidationError } from '@formspree/react';
 // import type { SubmitHandler } from '@formspree/react';
 
+const trackEvent = (action: string, params?: Record<string, unknown>) => {
+  (window as any)?.gtag?.('event', action, params);
+};
+
 interface FormData {
   email: string;
   message: string;
@@ -30,6 +34,7 @@ const ContactForm = ({ formKey, onSuccess }: { formKey: number; onSuccess: () =>
 
   useEffect(() => {
     if (state.succeeded) {
+      trackEvent('contact_submit', { method: 'formspree' });
       // Clear inputs immediately
       setFormData({ email: '', message: '' });
       
