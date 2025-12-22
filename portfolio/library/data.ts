@@ -2,6 +2,7 @@ import proj1 from "../assets/proj1.jpg";
 import proj2 from "../assets/proj2.jpg";
 import proj3 from "../assets/proj3.jpg";
 import proj4 from "../assets/proj4.jpg";
+import proj5 from "../assets/proj5.png";
 
 // Import all skill icons
 import djangoIcon from '../assets/Django.svg';
@@ -70,12 +71,12 @@ export const links: Link[] = [
 
 export const projectsData: Project[] = [
     {
-      title: "Image to Insurance Claim AI Generator",
-      description:
-        "I integrated OpenAI to genearate insurance claim from images of their properties lost from California fire. I worked on Google Cloud Platform, FastAPI, and MySQL.",
-      tags: ["React", "JavaScript", "TailwindCSS", "FastAPI", "Python", "GCP", "OpenAI", "MySQL", "Git"],
-      link: "https://github.com/jeffersonnle/image_to_insurance",
-      imageUrl: proj1,
+        title: "CampusPool: Ethereum Crowdfunding Platform",
+        description:
+        "I developed a Ethereum Crowdfunding Platform that allows stduents to create a campaign for their clubs and fund it. It uses Smart Contracts to distribute Soulbound Tokens for verification and security of the funds.",
+        tags: ["React", "TypeScript", "TailwindCSS", "Solidity", "MetaMask", "Supabase", "Git"],
+        link: "https://campus-pool.vercel.app/",
+        imageUrl: proj5,
     },
     {
       title: "Chef Panda: Video to Recipe with AI",
@@ -92,6 +93,14 @@ export const projectsData: Project[] = [
       tags: ["Python", "uv", "mypy", "ruff", "pytest", "coverage", "CircleCI", "Git"],
       link: "https://github.com/Shounak-Ghosh/ospsd-hw1-python/tree/hw4-integration",
       imageUrl: proj3,
+    },
+    {
+        title: "Image to Insurance Claim AI Generator",
+        description:
+          "I integrated OpenAI to genearate insurance claim from images of their properties lost from California fire. I worked on Google Cloud Platform, FastAPI, and MySQL.",
+        tags: ["React", "JavaScript", "TailwindCSS", "FastAPI", "Python", "GCP", "OpenAI", "MySQL", "Git"],
+        link: "https://github.com/jeffersonnle/image_to_insurance",
+        imageUrl: proj1,
     },
     {
       title: "httpi: A CLI API Testing Tool",
