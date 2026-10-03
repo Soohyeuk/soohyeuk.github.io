@@ -18,6 +18,7 @@ import spark from '../assets/ApacheSpark.svg'
 import go from '../assets/Go.svg'
 import mongodb from '../assets/MongoDB.svg'
 import postgresql from '../assets/PostgresSQL.svg'
+import kotlinIcon from '../assets/Kotlin.svg'
 
 
 const Skill = () => {
@@ -27,6 +28,10 @@ const Skill = () => {
       <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
         <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform' src={pythonIcon} alt="Python" />
         <span className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">Python</span>
+      </div>
+      <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
+        <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform' src={kotlinIcon} alt="Kotlin" />
+        <span className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">Kotlin</span>
       </div>
       <div className="flex flex-col items-center justify-center p-2 sm:p-4 rounded-xl bg-gray-100/80 hover:bg-gray-200/80 dark:bg-gray-800/80 dark:hover:bg-gray-700/80 shadow-lg backdrop-blur-sm border border-gray-200/20 dark:border-gray-700/20 transition-all w-24 sm:w-28 h-24 sm:h-28">
         <img className='w-8 sm:w-10 h-8 sm:h-10 hover:scale-125 transition-transform' src={cppIcon} alt="C++" />

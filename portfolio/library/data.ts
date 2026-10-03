@@ -14,15 +14,11 @@ import sqlIcon from '../assets/MySQL.svg';
 import matplotlibIcon from '../assets/Matplotlib.svg';
 import pandasIcon from '../assets/Pandas.svg';
 import numpyIcon from '../assets/NumPy.svg';
-import reactIcon from '../assets/React.svg';
 import typescriptIcon from '../assets/TypeScript.svg';
-import circleCiIcon from '../assets/CircleCI.svg';
-import ibmMainframeIcon from '../assets/ibm.svg';
-import canvaIcon from '../assets/Canva.svg';
-import javaIcon from '../assets/Java.svg';
 import nextjsIcon from '../assets/next.js.svg';
 import prismaIcon from '../assets/prisma.svg';
 import awsIcon from '../assets/aws.svg';
+import kotlinIcon from '../assets/Kotlin.svg';
 
 export interface Link {
     name: string;
@@ -73,46 +69,56 @@ export const projectsData: Project[] = [
     {
         title: "CampusPool: Ethereum Crowdfunding Platform",
         description:
-        "I developed a Ethereum Crowdfunding Platform that allows stduents to create a campaign for their clubs and fund it. It uses Smart Contracts to distribute Soulbound Tokens for verification and security of the funds.",
+            "I developed a Ethereum Crowdfunding Platform that allows stduents to create a campaign for their clubs and fund it. It uses Smart Contracts to distribute Soulbound Tokens for verification and security of the funds.",
         tags: ["React", "TypeScript", "TailwindCSS", "Solidity", "MetaMask", "Supabase", "Git"],
         link: "https://campus-pool.vercel.app/",
         imageUrl: proj5,
     },
     {
-      title: "Chef Panda: Video to Recipe with AI",
-      description:
-        "I developed a website that takes a YouTube video and generates a recipe from it. I used React, JavaScript, TailwindCSS, and FastAPI to create the website. Initially, I am testing it with OpenAI API, but I plan to use a fine-tuned LLM model in the future.",
-      tags: ["React", "JavaScript", "CSS", "FastAPI", "Python", "SQLite", "Git"],
-      link: "https://chef-panda.vercel.app",
-      imageUrl: proj2,
+        title: "Chef Panda: Video to Recipe with AI",
+        description:
+            "I developed a website that takes a YouTube video and generates a recipe from it. I used React, JavaScript, TailwindCSS, and FastAPI to create the website. Initially, I am testing it with OpenAI API, but I plan to use a fine-tuned LLM model in the future.",
+        tags: ["React", "JavaScript", "CSS", "FastAPI", "Python", "SQLite", "Git"],
+        link: "https://chef-panda.vercel.app",
+        imageUrl: proj2,
     },
     {
-      title: "Gmail AI Client as a uv package",
-      description:
-        "I created a Gmail AI Client as a uv package. It is a Gmail AI Client that allows you to send and receive emails with AI.",
-      tags: ["Python", "uv", "mypy", "ruff", "pytest", "coverage", "CircleCI", "Git"],
-      link: "https://github.com/Shounak-Ghosh/ospsd-hw1-python/tree/hw4-integration",
-      imageUrl: proj3,
+        title: "Gmail AI Client as a uv package",
+        description:
+            "I created a Gmail AI Client as a uv package. It is a Gmail AI Client that allows you to send and receive emails with AI.",
+        tags: ["Python", "uv", "mypy", "ruff", "pytest", "coverage", "CircleCI", "Git"],
+        link: "https://github.com/Shounak-Ghosh/ospsd-hw1-python/tree/hw4-integration",
+        imageUrl: proj3,
     },
     {
         title: "Image to Insurance Claim AI Generator",
         description:
-          "I integrated OpenAI to genearate insurance claim from images of their properties lost from California fire. I worked on Google Cloud Platform, FastAPI, and MySQL.",
+            "I integrated OpenAI to genearate insurance claim from images of their properties lost from California fire. I worked on Google Cloud Platform, FastAPI, and MySQL.",
         tags: ["React", "JavaScript", "TailwindCSS", "FastAPI", "Python", "GCP", "OpenAI", "MySQL", "Git"],
         link: "https://github.com/jeffersonnle/image_to_insurance",
         imageUrl: proj1,
     },
     {
-      title: "httpi: A CLI API Testing Tool",
-      description:
-        "A passion project while learning Go. It is a CLI tool that allows you to test APIs, like Postman, but in the terminal.",
-      tags: ["Go", "Git"],
-      link: "https://github.com/Soohyeuk/cli-api-tester",
-      imageUrl: proj4,
+        title: "httpi: A CLI API Testing Tool",
+        description:
+            "A passion project while learning Go. It is a CLI tool that allows you to test APIs, like Postman, but in the terminal.",
+        tags: ["Go", "Git"],
+        link: "https://github.com/Soohyeuk/cli-api-tester",
+        imageUrl: proj4,
     },
-  ] as const;
+] as const;
 
 export const experiencesData: Experience[] = [
+    {
+        company: "Google",
+        position: "Software Engineer Intern",
+        startDate: "May. 2026",
+        endDate: "Aug. 2026",
+        description: "Built a live-streaming agentic marketing campaign drafting system for the Google Developer Program, automating 90% of the creation workflow by orchestrating specialized subagents and leveraging existing RPC endpoints. Reduced marketing campaign creation time by 60% and enabled notification deployment across 40+ Google pages collectively reaching 40M users with over 10% click-through rate. Authored an end-to-end design document evaluating 7+ architectural components and implementation approaches for the chat agent across frontend and backend, including A2UI, tool functions, MCP, skill, session persistence, and creation validation, to inform key architecture decisions.",
+        tags: [
+            { icon: kotlinIcon, name: "Kotlin" },
+        ],
+    },
     {
         company: "Civic",
         position: "Software Engineer Intern",
@@ -152,31 +158,6 @@ export const experiencesData: Experience[] = [
             { icon: pandasIcon, name: "Pandas" },
             { icon: numpyIcon, name: "NumPy" },
             { icon: gitIcon, name: "Git" },
-        ],
-    },
-    {
-        company: "Power Changes Lives",
-        position: "Software Engineer Intern",
-        startDate: "Mar. 2024",
-        endDate: "May. 2024",
-        description: "Migrated a legacy PHP service to React, improving website quality by 50% based on user feedback. Designed and implemented a CI/CD pipeline using GitHub and CircleCI, ensuring automated unit testing for each component. Applied expertise in Software Development, TypeScript, Git, and CI/CD to enhance code quality and deployment efficiency.",
-        tags: [
-            { icon: reactIcon, name: "React" },
-            { icon: typescriptIcon, name: "TypeScript" },
-            { icon: circleCiIcon, name: "CircleCI" },
-            { icon: gitIcon, name: "Git" },
-        ],
-    },
-    {
-        company: "IBM",
-        position: "Z Ambassador",
-        startDate: "Dec. 2023",
-        endDate: "May. 2024",
-        description: "Earned the IBM Z Xplore Concepts Badge, demonstrating proficiency in mainframe technology. Collaborating with IBM and my university to promote mainframe adoption and awareness.",
-        tags: [
-            { icon: ibmMainframeIcon, name: "IBM Mainframe" },
-            { icon: canvaIcon, name: "Canva" },
-            { icon: javaIcon, name: "Java" },
         ],
     },
 ] as const;
